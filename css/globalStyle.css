@@ -6,9 +6,20 @@ a {
 a:hover {
     color: var(--secondaryLight);
 }
+.article-relatives ul,
+.article-relatives ol {
+    margin: 0;
+    padding: 0;
+}
+#navbar-container,
 .article-sidebar,
 .article-header {
     display: none;
+}
+.container {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
 }
 .search input[type="search"] {
     height: 40px;
