@@ -12,9 +12,19 @@ a:hover {
     padding: 0;
 }
 #navbar-container,
-.article-sidebar,
-.article-header {
+.article-subscribe,
+.article-sidebar {
     display: none;
+}
+.article-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 .container {
     max-width: 1600px;
@@ -48,4 +58,30 @@ a:hover {
 }
 .footer, .article-header {
     margin: 0;
+}
+.article-title {
+    max-width: var(--maxWidth);
+    width: 90%;
+    font-size: 50px;
+    line-height: 56px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding-bottom: 14px;
+    padding-right: 30%;
+    color: #FFF;
+    z-index: 1;
+}
+.article-author {
+    max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    color: #FFF;
+    z-index: 1;    
+}
+.article-greeting {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #DDD;
 }
