@@ -16,6 +16,17 @@ a:hover {
 .article-sidebar {
     display: none;
 }
+.article-header {
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    background-size: cover;
+    background-color: rgb(88, 88, 88);
+    padding: 196px 0px;
+    z-index: 1;
+    background-position: 50% 40%;
+    background-repeat: no-repeat no-repeat;    
+}
 .article-header::after {
     content: "";
     position: absolute;
@@ -27,9 +38,9 @@ a:hover {
     z-index: 0;
 }
 .container {
-    max-width: 1600px;
-    width: 90%;
-    margin: 0 auto;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
 }
 .search input[type="search"] {
     height: 40px;
@@ -67,21 +78,29 @@ a:hover {
     font-weight: 700;
     margin: 0 auto;
     padding-bottom: 14px;
-    padding-right: 30%;
+    padding-right: 25%;
     color: #FFF;
     z-index: 1;
 }
-.article-author {
-    max-width: 1300px;
+#welcome-message {
+    max-width: var(--maxWidth);
     width: 90%;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
     margin: 0 auto;
-    color: #FFF;
+    padding-bottom: 0;
+    color: rgba(255, 255, 255, 0.9);
     z-index: 1;    
 }
-.article-greeting {
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 15px;
-    color: #DDD;
+.meta-group {
+    padding: 0;
+}
+.article-author .meta-data {
+    max-width: var(--maxWidth);
+    width: 90%;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+    z-index: 1;    
 }
