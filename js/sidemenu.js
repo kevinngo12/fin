@@ -11,8 +11,14 @@ $("html").prepend(
   `
   );
   
+  var dataLabel;
   $(".heading-section").each(function (index) {
     var dataType = $(this).attr("data-type");
+    if(dataType.length) {
+      dataLabel = ": " + dataType;
+    } else {
+      dataLabel = "";
+    }
     $("ul.nav").append(
       '<li class="nav-item">' +
         '<a href="#section' +
@@ -20,7 +26,7 @@ $("html").prepend(
         '" class="nav-link">' +
         '<span class="nav-label">Section ' +
         (index + 1) +
-        dataType.length ? ": " + dataType : "" +
+        dataLabel +
         "</span>" +
         '<span class="nav-item-content">' +
         $(this).text() +
