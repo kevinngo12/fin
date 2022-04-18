@@ -70,6 +70,10 @@ a:hover {
 .footer, .article-header {
     margin: 0;
 }
+.article {
+    padding: 0 0 60px 0;
+    background-color: #f9f9f7;    
+}
 .article-title {
     max-width: var(--maxWidth);
     width: 90%;
@@ -90,7 +94,7 @@ a:hover {
     letter-spacing: 1px;
     font-weight: 700;
     margin: 0 auto;
-    padding-bottom: 0;
+    padding-bottom: 14px;
     color: rgba(255, 255, 255, 0.9);
     z-index: 1;    
 }
@@ -98,9 +102,173 @@ a:hover {
     padding: 0;
 }
 .article-author .meta-data {
+    color: rgba(255, 255, 255, 0.9);
+}
+.article-author {
     max-width: var(--maxWidth);
     width: 90%;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.9);
-    z-index: 1;    
+    z-index: 1;       
+}
+.article-content {
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+.section-container {
+    width: 100%;
+    padding: 56px 0;
+    margin: 0;
+}
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 90%;
+    max-width: var(--maxWidth);
+    width: 90%;
+    margin: 0 auto;
+}
+.section-bg {
+    position: relative;
+    background-color: #FFF;
+}
+.white-background {
+    background-color: #f9f9f7;
+}
+h2.heading-section {
+    font-size: 24px;
+    color: #000;
+}
+#header {
+    position: fixed;
+    background-color: #FFF;
+    width: 240px;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #FFF;
+    height: 100%;
+    z-index: 9999999999;
+}
+li.nav-item a {
+    display: block;
+    width: 100%;
+    color: #333;
+    font-size: 15px;
+    padding: 9px 24px 11px 24px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    transition: all 0.2s ease;
+}
+li.nav-item .nav-item-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+li.nav-item:hover a {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+li.nav-item.active a {
+    color: #FFF !important;
+    font-weight: 700;
+    background-color: #0c82a5 !important;
+}
+.nav-label {
+    text-transform: uppercase;
+    font-size: 11px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0.85;
+    letter-spacing: 1px;
+    height: 20px;
+}
+.side-nav  {
+    position: fixed;
+    width: 240px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+.side-nav.right-aligned {
+    right: 0;
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);
+    left: auto;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.side-nav.fixed {
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    position: fixed;
+}
+.header-logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    background-color: #FFF;
+}
+.header-logo img {
+    width: 78px;
+}
+body {
+    margin-left: 240px;
+}
+#sidenav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 997;
+    will-change: opacity;    
+}
+@media only screen and (max-width : 1300px) {
+    body {
+      margin-left: 0;  
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .hide-on-large-only {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .side-nav.fixed {
+        -webkit-transform: translateX(-105%);
+        transform: translateX(-105%);
+    }
+    .side-nav.fixed.right-aligned {
+        -webkit-transform: translateX(105%);
+        transform: translateX(105%);
+    }
+    .side-nav a {
+        padding: 0 16px;
+    }
+    .side-nav .userView {
+        padding: 16px 16px 0;
+    }
 }
