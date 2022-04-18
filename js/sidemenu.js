@@ -14,10 +14,10 @@ $("html").prepend(
   var dataLabel;
   $(".heading-section").each(function (index) {
     var dataType = $(this).attr("data-type");
-    if(dataType.length) {
-      dataLabel = ": " + dataType;
-    } else {
+    if(dataType === undefined) {
       dataLabel = "";
+    } else {
+      dataLabel = ": " + dataType;
     }
     $("ul.nav").append(
       '<li class="nav-item">' +
