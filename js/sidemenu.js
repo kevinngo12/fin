@@ -3,8 +3,7 @@ $("html").prepend(
       <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
       <header id="header">
          <div id="slide-out" class="side-nav fixed">
-                 <div class="header-logo"><img src="/hc/article_attachments/5021621988635/rise-logo-red.png" alt="redfin rise logo"></div>
-            <ul id="mainNav" class="nav d-flex">
+            <ul id="mainNav" class="nav">
             </ul>
          </div>
       </header>
@@ -102,9 +101,9 @@ $("html").prepend(
   $('.button-collapse').sideNav({
     menuWidth: 240, // Default is 300
     edge: 'left', // Choose the horizontal origin
-    closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     draggable: true // Choose whether you can drag to open on touch screens,
   }
-); 
+);
   
   
