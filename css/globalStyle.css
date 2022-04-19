@@ -22,6 +22,9 @@ a:hover {
     flex-direction: column;
     background-size: cover;
     background-color: rgb(88, 88, 88);
+    border-radius: 30px;
+    max-width: var(--maxWidth);
+    margin: 0 auto;
     padding: 196px 0px;
     z-index: 1;
     background-position: 50% 40%;
@@ -33,6 +36,7 @@ a:hover {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.60);
+    border-radius: 30px;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -40,7 +44,7 @@ a:hover {
 .container {
     max-width: 100% !important;
     width: 100% !important;
-    padding: 0 !important;
+    padding: 0 70px !important;
 }
 .search input[type="search"] {
     height: 40px;
@@ -59,7 +63,7 @@ a:hover {
 .sub-nav {
     position: relative;
     max-width: var(--maxWidth);
-    width: 90%;
+    width: 100%;
     margin: 0 auto;    
 }
 .article-footer, .article-votes, .section.support, .article-more-questions, .article-return-to-top, .article-relatives, .footer-inner {
@@ -90,11 +94,11 @@ a:hover {
     max-width: var(--maxWidth);
     width: 90%;
     font-size: 15px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
     font-weight: 700;
     margin: 0 auto;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
     color: rgba(255, 255, 255, 0.9);
     z-index: 1;    
 }
@@ -103,6 +107,9 @@ a:hover {
 }
 .article-author .meta-data {
     color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 .article-author {
     max-width: var(--maxWidth);
@@ -137,6 +144,10 @@ a:hover {
 h2.heading-section {
     font-size: 24px;
     color: #000;
+}
+ul.nav {
+    margin: 0;
+    padding: 14px 0 48px 0;
 }
 li.nav-item a {
     display: block;
@@ -237,6 +248,14 @@ body {
     background-color: rgba(0,0,0,0.5);
     z-index: 997;
     will-change: opacity;    
+}
+.button-collapse {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 84px;
+    margin-left: 24px;
+    z-index: 10;    
 }
 @media only screen and (max-width : 1300px) {
     body {
