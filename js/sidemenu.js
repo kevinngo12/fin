@@ -98,10 +98,17 @@ $("html").prepend(
     }
   });
 
+  $(".nav-link").click(function() {
+    var overlay = $("#sidenav-overlay");
+    if( overlay.length ) {
+      $(".button-collapse").click();
+    }
+  });
+
   $('.button-collapse').sideNav({
     menuWidth: 240, // Default is 300
     edge: 'left', // Choose the horizontal origin
-    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     draggable: true // Choose whether you can drag to open on touch screens,
   }
 );
