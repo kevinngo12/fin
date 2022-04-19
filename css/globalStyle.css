@@ -24,8 +24,8 @@ a:hover {
     background-color: rgb(88, 88, 88);
     border-radius: 30px;
     max-width: var(--maxWidth);
-    margin: 0 auto;
-    padding: 196px 0px;
+    margin: 0 auto !important;
+    padding: 148px 0px;
     z-index: 1;
     background-position: 50% 40%;
     background-repeat: no-repeat no-repeat;    
@@ -124,7 +124,8 @@ a:hover {
 .section-container {
     width: 100%;
     padding: 56px 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: var(--maxWidth);
 }
 .section-content {
     display: flex;
@@ -138,12 +139,16 @@ a:hover {
     position: relative;
     background-color: #FFF;
 }
+.section-mid {
+    padding-top: 0;
+}
 .white-background {
     background-color: #f9f9f7;
 }
 h2.heading-section {
     font-size: 24px;
     color: #000;
+    font-weight: 700;
 }
 ul.nav {
     margin: 0;
