@@ -187,19 +187,21 @@ ol.order-list {
     counter-reset: custom;
     list-style-type: none;
     padding: 0;
-    margin: 0px 20px;
+    margin: 0;
 }
 ol.order-list li {
     counter-increment: custom;
     padding: 15px 0;
     display: flex;
-    align-items: center;
 }
 ol.order-list li:before {
     content: counters(custom, ".") " ";
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-top: -3px;
+    margin-right: 14px;
     background: #FFF;
     border: 1px solid var(--primary);
     color: var(--primary);
