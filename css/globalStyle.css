@@ -226,7 +226,7 @@ ol.order-list {
 }
 ol.order-list li {
     counter-increment: custom;
-    padding: 15px 0;
+    padding: 10px 0;
     display: flex;
 }
 ol.order-list li:before {
