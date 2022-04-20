@@ -290,7 +290,7 @@ body {
 }
 .callout-box {
     background-color: rgba(12, 130, 165, 0.1);
-    border-left: 6px solid var(--secondary);
+    border: 1px solid var(--secondary);
     border-radius: 6px;
     padding: 24px;
     position: relative;
