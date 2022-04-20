@@ -340,6 +340,9 @@ body {
 .callout-box-body {
     margin: 6px 0 0 31px;
 }
+.tooltip-container {
+    position: relative;
+}
 .has-tooltip {
     display: inline-flex;
     align-items: center;
