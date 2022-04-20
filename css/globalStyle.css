@@ -183,6 +183,34 @@ li.nav-item.active a {
     font-weight: 700;
     background-color: #0c82a5 !important;
 }
+ol.order-list {
+    counter-reset: custom;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px 20px;
+}
+ol.order-list li {
+    counter-increment: custom;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+ol.order-list li:before {
+    content: counters(custom, ".") " ";
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: #FFF;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .nav-label {
     text-transform: uppercase;
     font-size: 11px;
@@ -382,6 +410,200 @@ body {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 100%);
+}
+.card p {
+    margin-top: 0;
+}
+.card {
+    background-color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.card:hover {
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15), 0 0 0 1px var(--primary);
+    border: 1px solid var(--primary);
+    transform: translateY(-4px);
+}
+.card .background-image {
+    border-radius: 6px;
+    margin-bottom: 16px;
+    background-size: 100%;
+    transition: all 0.2s ease;
+}
+.card .background-image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(200, 32, 33, 0.20);
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.card:hover .background-image::after {
+    opacity: 1;
+}
+.card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+.cta-buttons {
+    display: flex;
+    gap: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding-top: 16px;
+    margin-top: auto;
+}
+.button {
+    padding: 0 16px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+a.button.primary:visited, a.button.primary {
+    color: #fff;
+    text-decoration: none;
+}
+.button.primary {
+    color: #fff;
+    font-size: 15px;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.button.secondary {
+    font-size: 14px;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.button.primary:hover {
+    border-color: var(--primaryLight);
+    background-color: var(--primaryLight);
+}
+.button.secondary:hover {
+    color: var(--primary);
+    background-color: rgba(200, 32, 33, 0.08);
+}
+.horz-card {
+    display: flex;
+    padding: 16px;
+}
+.horz-card .background-image {
+    border-radius: 6px;
+    width: 140px;
+    min-width: 140px;
+    margin-bottom: 0;
+    background-size: cover;
+    background-position: 25% 50%;
+}
+.horz-card .card-content {
+    padding-left: 24px;
+    height: 100%;
+}
+.horz-card .button {
+    width: auto;
+}
+.accordion .accordion-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid var(--primary);
+}
+.accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 24px 0;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    background: none;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: var(--primary);
+}
+.accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+    transition: all 0.2s ease;
+}
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+    color: var(--primary);
+}
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 1600px;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+    will-change: opacity, max-height;
+}
+.accordion .accordion-content img {
+    width: 90%;
+    max-width: 760px;
+    margin: 24px auto;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: flex;
+}
+.accordion .accordion-content p {
+    background: #FFF;
+    padding: 24px;
+    margin: 0;
 }
 @media only screen and (max-width : 1300px) {
     body {
