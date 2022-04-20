@@ -10,6 +10,10 @@ $("html").prepend(
   `
   );
   
+  $(".heading-section").each(function(index) {
+    $(this).attr("id", "section" + (index + 1));
+  });
+
   var dataLabel;
   $(".heading-section").each(function (index) {
     var dataType = $(this).attr("data-type");
