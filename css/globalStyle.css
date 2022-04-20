@@ -367,7 +367,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%) scale(0.75) rotate(5deg);
     transform-origin: bottom center;
-    padding: 14px 20px 20px 20px;
+    padding: 14px 20px 16px 20px;
     border-radius: 6px;
     font-size: 14px;
     background: #03363d;
