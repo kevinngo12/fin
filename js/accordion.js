@@ -11,7 +11,7 @@ function toggleAccordion() {
     this.setAttribute('aria-expanded', 'true');
     setTimeout(() => {
       $('html, body').animate({
-      	scrollTop: $(this).offset().top - 25
+      	scrollTop: $(this).offset().top - 15
       }, 300);
     }, 400);
   }
