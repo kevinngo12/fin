@@ -578,7 +578,7 @@ a.button.primary:visited, a.button.primary {
     transition: all 0.2s ease;
 }
 .accordion .accordion-item:hover {
-    box-shadow: 0 0 0 1px var(--primary);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--primary);
     border: 1px solid var(--primary);
 }
 .accordion .accordion-item button[aria-expanded=true] {
