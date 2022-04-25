@@ -179,6 +179,14 @@ ul.img-list li {
 ul.img-list img {
     width: 48px;
     margin-right: 10px;
+    -webkit-filter: drop-shadow(2px 2px 0 white)
+    drop-shadow(-2px 2px 0 white)
+    drop-shadow(2px -2px 0 white)
+    drop-shadow(-2px -2px 0 white);
+    filter: drop-shadow(2px 2px 0 white)
+    drop-shadow(-2px 2px 0 white)
+    drop-shadow(2px -2px 0 white)
+    drop-shadow(-2px -2px 0 white);
 }
 .img-list-title {
     font-size: 16px;
