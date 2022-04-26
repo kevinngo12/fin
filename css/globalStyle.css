@@ -725,6 +725,37 @@ a.button.primary:visited, a.button.primary {
     padding: 24px 0;
     margin: 0;
 }
+.nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #FFF;
+    background-color: var(--primary); 
+}
+.nav-pills .nav-link {
+    border-radius: 6px;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.tab-content > .tab-pane {
+    display: none;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.tab-content > .active {
+    display: block;
+}
+.fade.show {
+    opacity: 1;
+}
 @media only screen and (max-width : 1300px) {
     body {
       margin-left: 0;  
