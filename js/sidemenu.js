@@ -21,7 +21,7 @@ $("html").prepend(
     if(dataType === undefined) {
       dataLabel = "";
     } else {
-      if(sectionTitle === false) {
+      if(sectionTitle === "false") {
         dataType;
       } else {
         dataLabel = ": " + dataType;
