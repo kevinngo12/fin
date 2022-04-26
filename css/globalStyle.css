@@ -170,23 +170,27 @@ h2.heading-section {
     margin: 6px 0 0 0;
 }
 ul.img-list {
+    position: relative;
     margin-left: 42px;
     list-style-type: none;
 }
 ul.img-list li {
+    position: relative;
     padding-bottom: 16px;
 }
 ul.img-list img {
+    position: relative;
     width: 48px;
     margin-right: 10px;
-    -webkit-filter: drop-shadow(2px 2px 0 white)
-    drop-shadow(-2px 2px 0 white)
-    drop-shadow(2px -2px 0 white)
-    drop-shadow(-2px -2px 0 white);
-    filter: drop-shadow(2px 2px 0 white)
-    drop-shadow(-2px 2px 0 white)
-    drop-shadow(2px -2px 0 white)
-    drop-shadow(-2px -2px 0 white);
+    -webkit-filter: drop-shadow(3px 3px 0 #f9f9f7)
+    drop-shadow(-3px 3px 0 #f9f9f7)
+    drop-shadow(3px -3px 0 #f9f9f7)
+    drop-shadow(-3px -3px 0 #f9f9f7);
+    filter: drop-shadow(3px 3px 0 #f9f9f7)
+    drop-shadow(-3px 3px 0 #f9f9f7)
+    drop-shadow(3px -3px 0 #f9f9f7)
+    drop-shadow(-3px -3px 0 #f9f9f7);
+    z-index: 1;
 }
 .img-list-title {
     font-size: 16px;
@@ -195,14 +199,26 @@ ul.img-list img {
     display: block;
     margin-left: -62px;
 }
+.img-list-content::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    margin-left: -38px;
+    z-index: 0;
+}
 ul.check-list-item {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 ul.check-list-item li {
-    display: flex;
+    display: inline-flex;
     padding-bottom: 8px;
+    width: 100%;
 }
 ul.check-list-item li:last-child {
     padding-bottom: 0;
@@ -378,6 +394,17 @@ body {
     height: 100%;
     min-height: 80px;
     border-radius: 6px;    
+}
+.check-list-item-container.has-image .check-list-content {
+    padding-right: 28%;
+    width: 100%;
+}
+.check-list-item-container.has-image img {
+    position: absolute;
+    width: 240px;
+    bottom: 0;
+    right: 0;
+    margin-right: -10px;    
 }
 .callout-box {
     width: 100%;
