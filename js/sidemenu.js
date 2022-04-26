@@ -17,7 +17,7 @@ $("html").prepend(
   var dataLabel;
   $(".heading-section").each(function (index) {
     var dataType = $(this).attr("data-type");
-    var sectionTitle = $(this).attr(section-title);
+    var sectionTitle = $(this).attr("data-section-title");
     if(dataType === undefined) {
       dataLabel = "";
     } else {
