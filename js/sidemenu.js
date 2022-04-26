@@ -17,10 +17,15 @@ $("html").prepend(
   var dataLabel;
   $(".heading-section").each(function (index) {
     var dataType = $(this).attr("data-type");
+    var sectionTitle = $(this).attr(section-title);
     if(dataType === undefined) {
       dataLabel = "";
     } else {
-      dataLabel = ": " + dataType;
+      if(sectionTitle === false) {
+        dataType;
+      } else {
+        dataLabel = ": " + dataType;
+      }
     }
     $("ul.nav").append(
       '<li class="nav-item">' +
