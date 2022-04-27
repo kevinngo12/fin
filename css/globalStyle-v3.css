@@ -53,6 +53,16 @@ a:hover {
     height: 100%;
     z-index: 0;
 }
+.article-meta {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px 12px 6px 12px;
+    border-radius: 1000px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 14px;
+    margin-right: 14px;
+}
 .container {
     max-width: 100% !important;
     width: 100% !important;
@@ -119,10 +129,8 @@ a:hover {
     padding: 0;
 }
 .article-author .meta-data {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
     font-weight: 700;
-    letter-spacing: 1px;
 }
 .article-author {
     max-width: var(--maxWidth);
