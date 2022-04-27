@@ -127,6 +127,7 @@ a:hover {
 }
 .meta-group {
     padding: 0;
+    margin: 0;
 }
 .article-author .meta-data {
     color: rgba(255, 255, 255, 0.75);
