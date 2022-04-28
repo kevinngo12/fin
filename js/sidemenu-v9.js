@@ -1,3 +1,5 @@
+$('body').addClass('body-has-sidemenu');
+
 $("html").prepend(
     `
       <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i class="material-icons">menu</i></a>
