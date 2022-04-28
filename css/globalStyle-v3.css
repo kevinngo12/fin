@@ -361,7 +361,7 @@ ol.order-list li:before {
 .header-logo img {
     width: 78px;
 }
-body {
+body.body-has-sidemenu {
     margin-left: 240px;
 }
 #sidenav-overlay {
@@ -796,7 +796,7 @@ a.button.primary:visited, a.button.primary {
     font-weight: 700 !important;
 }
 @media only screen and (max-width : 1300px) {
-    body {
+    body.body-has-sidemenu {
       margin-left: 0;  
     }
 }
