@@ -475,7 +475,7 @@ body.body-has-sidemenu {
     position: absolute;
     top: 0px;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.75) rotate(5deg);
+    transform: translate(-50%, -90%) scale(0.75) rotate(0deg);
     transform-origin: bottom center;
     padding: 14px 20px 16px 20px;
     border-radius: 6px;
@@ -483,7 +483,7 @@ body.body-has-sidemenu {
     background: #03363d;
     text-align: center;
     color: white;
-    transition: 0.15s ease-in-out;
+    transition: 0.20s ease-in-out;
     opacity: 0;
     width: 100%;
     min-width: 320px;
@@ -862,7 +862,6 @@ h1.sideNav-title {
     background-color: rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: block;
-    width: 100%;
 }
 .title-label span.content {
     display: -webkit-box;
