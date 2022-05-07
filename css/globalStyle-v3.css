@@ -829,13 +829,12 @@ svg.progress-circle-container {
     position: sticky;
     top: 0;
     background-color: #FFF;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
     z-index: 99;
 }
 .sideNav-title-header {
     display: flex;
     align-items: center;
-    padding: 16px 24px;
+    padding: 16px 24px 12px 24px;
 }
 h1.sideNav-title {
     font-size: 15px;
@@ -856,9 +855,12 @@ h1.sideNav-title {
 }
 .title-label {
     font-size: 13px;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    margin: 0 24px 20px 24px;
+    text-align: center;
+    padding: 6px;
     background-color: rgba(0, 0, 0, 0.06);
-    padding: 8px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     display: block;
     width: 100%;
 }
