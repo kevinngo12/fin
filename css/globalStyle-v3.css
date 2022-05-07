@@ -37,7 +37,7 @@ a:hover {
     border-radius: 30px;
     max-width: var(--maxWidth);
     margin: 0 auto !important;
-    padding: 148px 0px;
+    padding: 196px 0px;
     z-index: 1;
     background-position: 50% 40%;
     background-repeat: no-repeat no-repeat;    
@@ -121,7 +121,7 @@ a:hover {
     letter-spacing: 1px;
     font-weight: 700;
     margin: 0 auto;
-    padding-bottom: 14px;
+    padding-bottom: 6px;
     color: rgba(255, 255, 255, 0.9);
     z-index: 1;    
 }
