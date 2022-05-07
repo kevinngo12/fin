@@ -243,26 +243,33 @@ ul.check-list-item .material-icons {
 }
 ul.nav {
     margin: 0;
-    padding: 20px 0 24px 0;
+    padding: 14px 0 24px 0;
 }
 li.nav-item a {
     display: block;
     width: 100%;
     color: #333;
     font-size: 15px;
-    padding: 9px 24px 11px 24px;
+    padding: 10px 24px 13px 24px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     text-transform: capitalize;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
     transition: all 0.2s ease;
+}
+.nav-link .material-icons-outlined {
+    position: absolute;
+    margin-left: -4px;
+    margin-top: 2px;
+    font-size: 20px;
 }
 li.nav-item .nav-item-content {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+    margin-left: 24px;
 }
 li.nav-item:hover a {
     color: #000;
@@ -270,7 +277,6 @@ li.nav-item:hover a {
 }
 li.nav-item.active a {
     color: #FFF !important;
-    font-weight: 700;
     background-color: #0c82a5 !important;
 }
 ol.order-list {
@@ -313,6 +319,7 @@ ol.order-list li:before {
     opacity: 0.85;
     letter-spacing: 1px;
     height: 20px;
+    margin-left: 24px;
 }
 .side-nav  {
     position: fixed;
@@ -324,7 +331,7 @@ ol.order-list li:before {
     transform: translateX(-100%);
     height: 100%;
     height: -moz-calc(100%);
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     background-color: #fff;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     z-index: 999;
@@ -794,6 +801,84 @@ a.button.primary:visited, a.button.primary {
     color: #FFF !important;
     background-color: var(--primary) !important;
     font-weight: 700 !important;
+}
+.outline {
+    stroke-linecap: round;
+}
+.progress-circle {
+    stroke: rgba(200, 32, 33, 0.25);
+    stroke-width: 20;
+    stroke-dasharray: 0;
+}
+svg.progress-circle-container {
+    left: 0;
+    top: 0;
+    width: 56px;
+    height: 56px;
+}
+.progress-parent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+.sideNav-main-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
+    z-index: 99;
+}
+.sideNav-title-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+}
+h1.sideNav-title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #000;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.nav-link .material-icons-outlined {
+    position: absolute;
+    margin-left: -4px;
+    margin-top: 2px;
+    font-size: 20px;
+}
+.title-label {
+    font-size: 13px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 8px 24px;
+    display: block;
+    width: 100%;
+}
+.title-label span.content {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+text#scrollPercentLabel {
+    position: absolute;
+    display: flex;
+    height: 52px;
+    width: 52px;
+    margin-top: -2px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-width : 1300px) {
     body.body-has-sidemenu {
