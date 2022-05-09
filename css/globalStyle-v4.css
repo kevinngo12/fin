@@ -881,6 +881,9 @@ text#scrollPercentLabel {
     color: #333;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 }
+.section-content ul li {
+    padding-bottom: 8px;
+}
 @media only screen and (max-width : 1300px) {
     body.body-has-sidemenu {
       margin-left: 0;  
