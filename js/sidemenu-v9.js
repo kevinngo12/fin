@@ -77,7 +77,7 @@ $(window).scroll(function () {
 
   // Get id of current scroll item
   var cur = scrollItems.map(function () {
-    if ($(this).offset().top - 40 < fromTop) return this;
+    if ($(this).offset().top - 100 < fromTop) return this;
   });
   // Get the id of the current element
   cur = cur[cur.length - 1];
@@ -107,7 +107,7 @@ $(".nav-link-menu").click(function (t) {
         (t.preventDefault(),
         $("html, body").animate(
           {
-            scrollTop: e.offset().top - 15,
+            scrollTop: e.offset().top - 75,
           },
           500,
           function () {
