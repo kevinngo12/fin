@@ -22,7 +22,6 @@ a:hover {
     margin: 0;
     padding: 0;
 }
-#navbar-container,
 .article-subscribe,
 .article-unsubscribe,
 .article-sidebar {
@@ -81,13 +80,13 @@ a:hover {
     max-width: var(--maxWidth);
     width: 90%;
     margin: 0 auto;
-    display: none;
 }
 .sub-nav {
     position: relative;
     max-width: var(--maxWidth);
     width: 100%;
-    margin: 0 auto;    
+    margin: 0 auto;
+    padding-bottom: 15px;
 }
 .article-footer, .article-votes, .section.support, .article-more-questions, .article-return-to-top, .article-relatives, .footer-inner {
     max-width: var(--maxWidth);
@@ -391,6 +390,7 @@ body.body-has-sidemenu {
 }
 .container-divider {
     border-top: 0 !important;
+    display: none;
 }
 .article-content {
     margin: 0 0 24px 0 !important;
@@ -884,9 +884,15 @@ text#scrollPercentLabel {
 .section-content ul li {
     padding-bottom: 8px;
 }
+#navbar-container zd-hc-navbar {
+    width: calc(100% - 240px) !important;
+}
 @media only screen and (max-width : 1300px) {
     body.body-has-sidemenu {
       margin-left: 0;  
+    }
+    #navbar-container zd-hc-navbar {
+        width: 100% !important;
     }
 }
 @media only screen and (min-width: 1300px) {
