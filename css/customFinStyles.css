@@ -887,14 +887,14 @@ text#scrollPercentLabel {
 .section-content ul li {
     padding-bottom: 8px;
 }
-#navbar-container zd-hc-navbar {
+body.body-has-sidemenu #navbar-container zd-hc-navbar {
     width: calc(100% - 240px) !important;
 }
 @media only screen and (max-width : 1300px) {
     body.body-has-sidemenu {
       margin-left: 0;  
     }
-    #navbar-container zd-hc-navbar {
+    body.body-has-sidemenu #navbar-container zd-hc-navbar {
         width: 100% !important;
     }
 }
