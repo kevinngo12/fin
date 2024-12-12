@@ -2,7 +2,6 @@ function animateNumbersTo(target, newPercent, duration, suffix) {
     const elmTarget = document.querySelector(target);
     let currentPercent = parseInt(elmTarget.textContent) || 0;
     const targetPercent = newPercent;
-    const duration = duration;
     const startTime = performance.now();
   
     const animate = () => {
